@@ -11,13 +11,16 @@ func Avg(payments []types.Payment) types.Money {
 
 	var payment types.Payment
 
+	numberOfPayments := 0
+
 	for _, payment = range payments {
 		if payment.Status != types.StatusFail {
 			sum += payment.Amount
+			numberOfPayments++
 		}
 	}
 
-	numberOfPayments := len(payments)
+	// numberOfPayments := len(payments)
 
 	average := int(sum) / numberOfPayments
 

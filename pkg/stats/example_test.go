@@ -30,7 +30,7 @@ func ExampleAvg() {
 
 	fmt.Println(Avg(payments))
 
-	//Output: 1000
+	//Output: 1500
 }
 
 func ExampleTotalInCategory() {
