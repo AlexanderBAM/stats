@@ -1,4 +1,2 @@
-github.com/AlexanderBAM/bank v0.0.0-20200925083740-9fffa827b837 h1:9ECyWD7Oj15g1eC15tjUGSP+CwYGNMmF/pM0zK92dtA=
-github.com/AlexanderBAM/bank v0.0.0-20200925083740-9fffa827b837/go.mod h1:ft1b2QfAZKPxTXjsC7bRcHdR1/tZQLrfc0Lwz62CUgs=
-github.com/AlexanderBAM/bank v0.0.0-20200925091144-eee3af52a096 h1:g6hpxQRJwgnj00VpZ4qLF6/fZPyOA/VC1wLbBiCn4tk=
-github.com/AlexanderBAM/bank v0.0.0-20200925091144-eee3af52a096/go.mod h1:ft1b2QfAZKPxTXjsC7bRcHdR1/tZQLrfc0Lwz62CUgs=
+github.com/AlexanderBAM/bank/v2 v2.0.0 h1:sLp8YjHWUYF5eZQL9tyX2weWP3r1tK7QbpcHCxTp5p0=
+github.com/AlexanderBAM/bank/v2 v2.0.0/go.mod h1:zLh+Vz0Mp4JfyZKbqWDJSA0LJ1uf8r4PrjSjeV3cHFA=

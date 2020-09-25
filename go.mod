@@ -2,4 +2,4 @@ module github.com/AlexanderBAM/stats/v2
 
 go 1.15
 
-require github.com/AlexanderBAM/bank v0.0.0-20200925091144-eee3af52a096
+require github.com/AlexanderBAM/bank/v2 v2.0.0

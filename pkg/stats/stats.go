@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/AlexanderBAM/bank/pkg/types"
+	"github.com/AlexanderBAM/bank/v2/pkg/types"
 )
 
 // Avg calculates average amount
@@ -12,7 +12,9 @@ func Avg(payments []types.Payment) types.Money {
 	var payment types.Payment
 
 	for _, payment = range payments {
-		sum += payment.Amount
+		if payment.Status != types.StatusFail {
+			sum += payment.Amount
+		}
 	}
 
 	numberOfPayments := len(payments)
@@ -29,7 +31,7 @@ func TotalInCategory(payments []types.Payment, category types.Category) types.Mo
 	var payment types.Payment
 
 	for _, payment = range payments {
-		if category == payment.Category {
+		if category == payment.Category && payment.Status != types.StatusFail {
 			sum += payment.Amount
 		}
 	}
