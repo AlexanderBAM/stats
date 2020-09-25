@@ -1,4 +1,4 @@
-module github.com/AlexanderBAM/stats
+module github.com/AlexanderBAM/stats/v2
 
 go 1.15
 
