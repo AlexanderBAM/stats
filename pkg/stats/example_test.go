@@ -62,7 +62,7 @@ func ExampleTotalInCategory() {
 	//Output: 1000
 }
 
-func TestCategoriesAvg(t *testing.T) {
+func TestCategoriesAvg_Random(t *testing.T) {
 	payments := []types.Payment{
 		{ID: 1, Category: "fun", Amount: 100_00},
 		{ID: 2, Category: "auto", Amount: 200_00},
