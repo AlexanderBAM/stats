@@ -65,3 +65,22 @@ func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 
 	return categories
 }
+
+//PeriodsDynamic compares two sets of data (maps)
+func PeriodsDynamic(first map[types.Category]types.Money, second map[types.Category]types.Money) map[types.Category]types.Money {
+
+	Dynamic := map[types.Category]types.Money{}
+	RangeLength := map[types.Category]types.Money{}
+
+	if len(first) >= len(second) {
+		RangeLength = first
+	} else {
+		RangeLength = second
+	}
+
+	for key := range RangeLength {
+		Dynamic[key] = second[key] - first[key]
+	}
+
+	return Dynamic
+}
